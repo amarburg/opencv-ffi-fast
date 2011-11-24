@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = CVFFI::FAST::VERSION
   s.authors     = ["Aaron Marburg"]
   s.email       = ["aaron.marburg@pg.canterbury.ac.nz"]
-  s.homepage    = ""
+  s.homepage    = "http://github.com/amarburg/opencv-ffi-fast"
   s.summary     = %q{Edward Rosten's FAST keypoint detector algorithm, as a plug-in for OpenCV-FFI.}
   s.description = %q{Edward Rosten's FAST keypoint detector algorithm, as a plug-in for OpenCV-FFI.}
 
