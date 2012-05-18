@@ -5,7 +5,7 @@ require 'opencv-ffi'
 module CVFFI
   module FAST
 
-    class FASTResultsArray
+    class FASTResults
       include Enumerable
 
       attr_accessor :points
@@ -23,7 +23,7 @@ module CVFFI
       def each
         if @nPoints > 0
           0.upto(@nPoints-1) { |i|
-yield Xy.new( @points[i] )
+            yield Xy.new( @points[i] )
           }
         end
       end
@@ -75,7 +75,7 @@ yield Xy.new( @points[i] )
       nPoints = nResults.read_int
       points = FFI::Pointer.new Xy, results
 
-      FASTResultsArray.new( points, nPoints )
+      FASTResults.new( points, nPoints )
     end
 
     def self.FAST9Detect( img, threshold );  FASTDetect( 9, img, threshold ); end
