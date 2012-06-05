@@ -1,5 +1,6 @@
 
-require 'rubygems'
+puts $LOAD_PATH
+
 require 'mkrf'
 
 # I admit it, I'm monkey-patching mkrf to get the behavior I want.
