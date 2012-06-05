@@ -1,5 +1,5 @@
 
-puts $LOAD_PATH
+puts Gem.all_load_paths
 
 require 'mkrf'
 
