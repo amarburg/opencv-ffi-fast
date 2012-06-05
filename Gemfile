@@ -1,6 +1,8 @@
 source "http://rubygems.org"
 gem "rake"
 
+gem "mkrf"
+
 # Specify your gem's dependencies in opencv-ffi-fast.gemspec
 gemspec
 
